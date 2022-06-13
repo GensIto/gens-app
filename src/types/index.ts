@@ -4,3 +4,8 @@ export type Seat = {
   active: boolean | undefined
   user_id: string | undefined
 }
+
+export type EditedSeat = {
+  active: boolean | undefined
+  user_id: string | undefined
+}
