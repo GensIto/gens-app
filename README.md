@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 自主学習サポート
 
-## Getting Started
+### なぜ作ろうと思ったか
 
-First, run the development server:
+とりあえず家で勉強するのは集中できない時カフェに行こうと思ったことが多々あるのですが、いくのがめんどくさい。コーヒー代を払いたくないなどで実行できない時に仮想で何処かで勉強しているつもりになれれば勉強が捗るのではないか！と思い作りました
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### 使用技術
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- フロント
+  - next.js
+- バック
+  - supabase
+- データ取得
+  - supabase & react-supabase
+- キャッシュ
+  - react-query 途中で使わなくてもいいなと思い少しだけの使用
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 感想
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+自走力が全くない。
+調べても全くわからない。
+たまたま日本語の supabase の discord を見つけられて教えていただけた。使用技術の設定を udemy でやったことのを自分で応用しようとしたので無駄なモジュールがある、消したいが少し使用したりしているので消そうにも消しにくい
+設計できる人はこういうところもしっかりしているんだろうなと感じた
+でも 1 年前ごろまでバリバリサッカー選手して全く勉強できないところからここまでできた自分を褒めたいと思いました。もっと日本が豊かになるもの開発できるように精進....
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### これから
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 席の配置をこだわりたい
+- 席が近い人にだけチャットできるようにしたい
+- ユーザー名と画像のデータも使用したい
+- 仮想通貨の送金、受け取り機能を実装したい
+- ジャンル別の部屋を作りたい
+- bgm を流したい
