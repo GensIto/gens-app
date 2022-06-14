@@ -17,7 +17,7 @@ export const SeatList = () => {
         {data?.map((seat) => (
           <li className="my-2 flex flex-col items-center" key={seat.id}>
             <label>{seat.user_id}</label>
-            <Seat active={seat.active} id={seat.id} />
+            <Seat id={seat.id} active={seat.active} />
           </li>
         ))}
       </ul>

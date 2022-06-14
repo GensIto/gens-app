@@ -1,13 +1,15 @@
 import { useUpdate } from 'react-supabase'
+import { useState, useEffect } from 'react'
+import { supabase } from '../utils/supabase'
 
 export const Seat = (props: { active: boolean; id: string }) => {
-  const [{ count, data, error, fetching }, execute] = useUpdate('seat', {
-    filter: (query) => query.eq('id', true),
-  })
+  const userId = supabase.auth.user()?.id
 
+  const [{ count, data, error, fetching }, execute] = useUpdate('seat')
   async function onClick() {
-    const { count, data, error } = await execute({ active: true }, (query) =>
-      query.eq('active', false)
+    const { count, data, error } = await execute(
+      { active: true, user_id: userId },
+      (query) => query.eq('id', props.id)
     )
   }
 
